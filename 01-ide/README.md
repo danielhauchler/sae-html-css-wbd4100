@@ -68,6 +68,7 @@ Auch Git lässt sich mit [Komandozeilen-Befehle über den Terminal](https://roge
 ![VSC Git Client](https://raw.githubusercontent.com/danielhauchler/start-coding/master/99_assets/media/images/readme/vsc-git-client.png)
 
 <br>
+<br>
 
 ### Webbrowser
 
