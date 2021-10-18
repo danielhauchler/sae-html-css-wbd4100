@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: blueviolet;
+    }
+
+    .box:hover {
+      background-color:cornflowerblue;
+    }
+
+    .box:active {
+      background-color: crimson;
+    }
+
+    input:focus {
+      background-color:darkcyan;
+      color: white;
+    }
+
+    a {
+      color: blue;
+    }
+    a:visited {
+      color:deeppink;
+    }
+
+    fieldset:focus-within {
+      border: 2px solid red;
+    }
+
+    #message:focus-visible {
+      background-color:deeppink
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+
+  <br>
+
+  <inputtype="text">
+
+  <br>
+
+  <a href="https://sae.edu">SAE Institute</a>
+
+  <br>
+
+  <form action="test.php" method="post">
+    <fieldset>
+      <label for="name">Name</label>
+      <input type="name" id="name">
+      <label for="message">Message</label>
+      <input type="message" id="message">
+    </fieldset>
+  </form> 
+
+</body>
+</html>
