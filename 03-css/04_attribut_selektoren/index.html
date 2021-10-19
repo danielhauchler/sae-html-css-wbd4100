@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribut Selektoren</title>
+
+  <style>
+
+    [title] {
+      color: red;
+    }
+
+    [title="Link"] {
+      color: blue;
+    }
+
+    [title~="ipsum"] {
+      color: green;
+    }
+
+    [title|="Lorem"] {
+      color: yellow;
+    }
+
+    [title^="Mor"] {
+      text-transform: uppercase;
+    }
+
+    [title$="olo"] {
+      color:deepskyblue
+    }
+
+    [title*="XX"] {
+      font-size: 30px;
+    }
+    
+    [type="text"] {
+      background-color: blue;
+    }
+
+    [type="number"] {
+      background-color: red;
+    }
+
+    a[href] {
+
+    }
+
+    link[href] {
+
+    }
+
+  </style>
+
+</head>
+<body>
+  
+  <a href="#" title="">Link</a>
+
+  <a href="#" title="Link">Link</a>
+
+  <a href="#" title="Lorem ipsum dolor">Link</a>
+
+  <a href="#" title="Lorem-ipsum-dolor">Link</a>
+
+  <a href="#" title="Moremipsumdolor">Link</a>
+
+  <a href="#" title="Moremipsumdolor">Link</a>
+
+  <a href="#" title="Moremipsumdolo">Link</a>
+
+  <a href="#" title="MoremipXXsumdolo">Link</a>
+
+  <input type="text">
+
+  <input type="number">
+
+</body>
+</html>

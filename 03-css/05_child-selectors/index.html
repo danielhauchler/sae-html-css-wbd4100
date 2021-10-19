@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Selectors</title>
+  <style>
+
+    ul li:nth-child(2) {
+      background-color: red;
+      color: white;
+    }
+
+    ul li:nth-child(2n) {
+      background-color: grey;
+      color: white;
+    }
+
+    ol > li {
+      color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <div>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+    </div>
+  </ul>
+
+  <ol>
+    <div>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+    </div>
+  </ol>
+
+  <ol>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+  </ol>
+
+</body>
+</html>

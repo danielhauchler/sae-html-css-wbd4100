@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav Example</title>
+  <style>
+
+    /* * {
+      margin: 0;
+      padding: 0;
+    } */
+
+    nav {
+
+    }
+
+    nav ul {
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;
+      /* list-style: none; */
+      /* border-left: 1px solid black */
+    }
+
+    nav ul li:not(:last-child) {
+      border-right: 1px solid black;
+    }
+
+    nav ul li:not(:last-child):after {
+      /* content: '|'; */
+      /* margin-left: 4px; */
+    }
+
+    nav ul li:hover a {
+      text-decoration: underline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      padding: 0 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
