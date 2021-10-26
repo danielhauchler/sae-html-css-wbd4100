@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 100%;
+      /* width: 960px; */
+      margin: 0 auto;
+      height: 100vh;
+      background-color: gray;
+    }
+
+    h1 {
+      color: green;
+    }
+
+    @media (min-width: 576px) {
+      .container {
+        width: 576px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: 768px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .container {
+        width: 990px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+        width: 1200px;
+      }
+    }
+
+    @media (max-aspect-ratio: 3/2) {
+      .container {
+        background: #9ff;  /* cyan */
+      }
+    }
+
+    @media print {
+      h1 {
+        color: red;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Überschrift</h1>
+  </div>
+</body>
+</html>

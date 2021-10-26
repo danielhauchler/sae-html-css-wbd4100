@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+  <style>
+    div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+
+      transition: all 2s ease-in-out;
+
+      /* transform: translate(423px, 400px); */
+      /* transform: translateX(423px);
+      transform: translateY(400px); */
+
+      /* transform: scale(.9); */
+      /* transform: rotate(230deg); */
+
+      /* transform-origin: 100px 100px; */
+
+      /* css easings */
+      /* https://easings.net/de */
+      
+    }
+    div:hover {
+      transform: scale(2) rotate(2000deg) skew(30deg, 20deg) matrix(1, 2, 3, 4, 5, 6);;
+      opacity: .2;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
