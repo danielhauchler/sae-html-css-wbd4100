@@ -2,74 +2,186 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.border_red {
-  border: 2px solid red;
+body .border_red {
+  border: 2px solid #c6538c;
 }
 
-#hero {
+body #hero {
   position: relative;
   height: 100vh;
-  box-sizing: border-box;
-  background-image: url('../../images/slide02.jpg');
-  filter: grayscale(50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+}
+
+body #hero #hero_image {
+  background-image: url("../../images/slide02.jpg");
   background-size: cover;
   background-position: center;
+  width: 100vw;
+  height: 100vh;
+  opacity: .7;
 }
 
-#hero header {
+body #hero header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 25px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#hero header #hero_logo {
+body #hero header #hero_logo {
   color: #adb0b2;
   text-decoration: none;
 }
 
-#hero header #hero_logo span:nth-child(1) {
+body #hero header #hero_logo span:nth-child(1) {
   color: white;
   font-size: 1.3rem;
 }
 
-#hero header #hero_logo span:nth-child(2) {
-
+body #hero header #hero_logo span:nth-child(3) {
+  text-transform: uppercase;
 }
 
-#hero header #hero_logo span:nth-child(3) {
-  text-transform: uppercase
-}
-
-#hero header nav {
+body #hero header nav {
   display: inline-block;
 }
 
-#hero header nav #hero_nav_nav-icon {
+body #hero header nav #hero_nav_nav-icon {
   color: white;
-  font-size: 20px
+  font-size: 20px;
 }
 
-#hero header nav span {
+body #hero header nav span {
   font-size: 20px;
   color: white;
   margin-left: 5px;
 }
 
-#hero #hero_content {
+body #hero #hero_content {
   position: absolute;
   top: 0;
   left: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100vh;
   color: white;
   /* position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  transform: translate(-50%); */
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      transform: translate(-50%); */
 }
+
+body #hero #hero_content span {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+body #hero #hero_content #hero_content_line {
+  background-color: white;
+  width: 200px;
+  height: 2px;
+  margin: 25px;
+}
+
+body #hero #hero_content h1 {
+  font-size: 7rem;
+}
+
+body #hero #hero_slider-nav {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #hero #hero_slider-nav .hero_slider-nav-dots {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: .6;
+}
+
+body #hero #hero_slider-nav .hero_slider-nav-dots:nth-child(2) {
+  opacity: 1;
+}
+
+body .cards {
+  width: 100%;
+  background-color: #f2f2f2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 6%;
+}
+
+@media (min-width: 480px) {
+  body .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 960px) {
+  body .cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 940px;
+  }
+}
+
+body .cards .card {
+  background-color: #fff !important;
+  background-color: red;
+}
+
+body .cards .card div {
+  width: 100%;
+  height: 200px;
+}
+
+body .cards .card div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
