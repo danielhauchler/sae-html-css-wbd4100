@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Keyframes</title>
+  <style>
+
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      width: 200px;
+      height: 200px;
+      background-color: lightseagreen;
+    }
+
+    .animated-box {
+      animation-name: animated-box;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: 4;
+      animation-fill-mode: forwards;
+      animation-delay: 2s;
+      animation-direction: alternate;
+    }
+
+    /* animation: */
+    /* animation-name: */
+    /* animation-duration: */
+    /* animation-iteration-count: */
+    /* animation-timing-function: */
+    /* animation-direction: */
+    /* animation-delay: */
+    /* animation-fill-mode: */
+/* 
+    @keyframes animated-box {
+      from {
+        left: 10%;
+        transform: translateY(-50%) rotate(0deg)
+      }
+      to {
+        left: 50%;
+        transform: translateY(-50%) rotate(360deg)
+      }
+    } */
+
+    @keyframes animated-box {
+      0% {
+        left: 10%;
+        transform: translateY(-50%) rotate(0deg)
+      }
+      30% {
+        left: 60%;
+        transform: translateY(-50%) rotate(0deg)
+      }
+      60% {
+        left: 20%;
+        transform: translateY(-50%) rotate(0deg);
+        background-color:magenta;
+      }
+      85% {
+        left: 50%;
+        transform: translateY(-50%) rotate(0deg)
+      }
+      100% {
+        left: 40%;
+        transform: translateY(-50%) rotate(0deg);
+        background-color: lime;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="box animated-box"></div>
+</body>
+</html>

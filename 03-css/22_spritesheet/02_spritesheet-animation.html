@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spritesheet</title>
+  <style>
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .spritesheet {
+      width:250px;
+      height: 170px;
+      background-image: url('spritesheet.png');
+      background-size: 1000px 170px;
+      overflow: hidden;
+      animation: spritesheetAnimation .5s steps(3) infinite;
+    }
+
+    @keyframes spritesheetAnimation {
+
+      from {
+        background-position-x: 0
+      }
+
+      to {
+        background-position-x: -752px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="spritesheet"></div>
+</body>
+</html>
