@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    
+    label {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: unset;
+      bottom: unset;
+    }
+
+    input {
+      display: none;
+    }
+    .offcanvas {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background-color: black;
+      color: white;
+      transition: .6s;
+    }
+
+    input[type="checkbox"]:checked ~ .offcanvas {
+      right: 0;
+    }
+
+    input[type="checkbox"]:checked ~ label {
+      right: 0;
+      bottom: 0;
+    }
+
+    
+  </style>
+
+</head>
+
+<body>
+
+    <nav>
+      
+    </nav>
+
+
+    <input type="checkbox" id="nav-taggler">
+
+    <label for="nav-taggler">Toggle</label>
+
+    <div class="offcanvas">
+      
+    </div>
+</body>
+
+</html>

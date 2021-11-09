@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      scroll-behavior: smooth;
+    }
+    nav {
+      width: 100vw;
+      background-color: darkslategray;
+      color: white;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    ul li {
+      position: relative;
+      list-style: none;
+    }
+
+    ul li a:hover ~ ul {
+      display: block;
+    }
+
+    ul li a {
+      color: white;
+      padding: 20px;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    ul li ul {
+      display: none;
+      position: absolute;
+      left: 0px;
+      flex-direction: column;
+      background-color: darkslategray;
+      color: white;
+      transition: .6s;
+    }
+
+    ul li ul:hover {
+      display: block;
+    }
+
+    ul li ul li {
+      width: 100%;
+    }
+
+    ul li ul li a {
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    main {
+      position: relative;
+      background-color: lightblue;
+      height: 300vh;
+    }
+
+    #scroll-position {
+
+    }
+
+    .scroll-top {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 25px;
+      border-radius: 50%;
+      background-color: lightslategray;
+      color: white;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="scroll-position"></div>
+  <nav>
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PRODUCTS</a>
+        <ul>
+          <li><a href="https://google.com">T-Shirts</a></li>
+          <li><a href="https://google.com">Pullover</a></li>
+          <li><a href="https://google.com">Hose</a></li>
+          <li><a href="https://google.com">Schuhe</a></li>
+        </ul>
+      </li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#">KONTAKT</a></li>
+      <li><a href="#">IMPRESSUM</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- https://developer.mozilla.org/de/docs/Web/CSS/scroll-behavior -->
+    <a href="#scroll-position" class="scroll-top">^</a>
+  </main>
+</body>
+</html>
